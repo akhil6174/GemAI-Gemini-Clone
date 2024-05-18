@@ -1,7 +1,6 @@
 import { createContext, useState } from "react";
 import run from "../../config/gemini";
 import { marked } from "marked";
-const acorn = await import('acorn');
 
 export const Context=createContext();
 
