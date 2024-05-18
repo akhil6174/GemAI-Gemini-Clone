@@ -1,0 +1,110 @@
+.sidebar{
+    min-height: 100vh;
+    display:inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    padding: 25px 5px;
+    /* border: 1px solid black; */
+}
+
+.sidebar img{
+    width:20px;
+}
+.sidebar .menu{
+    display: block;
+    margin-left: 10px;
+    cursor:pointer
+}
+.sidebar .new-chat{
+    margin-top:10px;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    gap:10px;
+    color:rgb(225, 163, 163);
+    font-size: 14px;
+    border-radius:50px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: rgb(184, 208, 228);
+}
+.sidebar .recent{
+    display: flex;
+    flex-direction: column;
+    animation: appearence 1.2s;
+}
+.sidebar.recent-title{
+    margin: 30px 0 20px 0;
+}
+
+.sidebar .recent-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #282828;
+    cursor: pointer;
+}
+.sidebar .one-recent{
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    gap:10px;
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 50px;
+}
+.sidebar .one-recent p{
+    margin-top: 2px;
+}
+.sidebar .one-recent:hover{
+    background-color: #e2e6eb;
+}
+.location{
+    /* border: 1px solid black; */
+    /* min-width: 35px; */
+    min-height: 20px;
+    color: #282828;
+    font-size: 12px;
+    gap:10px;
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 50px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: space-between;
+}
+.location .dot{
+    width: 4.5px;
+    height:5px;
+    border-radius: 50%;
+    background-color: #282828;
+    margin-right: 3px;
+    display: inline-block;
+    margin-bottom: 1px;
+}
+@keyframes appearenceDelay{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@media (max-width:600px){
+    .sidebar{
+        display: none;
+    }
+    .location{
+        display: none;
+    }
+}
+.list-decor{
+    max-height: 30vh;
+    overflow-y: scroll;
+
+}
+.list-decor::-webkit-scrollbar{
+    display: none;
+}
